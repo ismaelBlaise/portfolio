@@ -17,8 +17,8 @@ const skills = {
     icon: <Database size={24} />,
     title: "Backend",
     items: [
-      { name: "Node.js", level: 85 },
-      { name: "Python", level: 80 },
+      { name: "Spring boot", level: 90 },
+      { name: "Laravel", level: 80 },
       { name: "PostgreSQL", level: 75 },
       { name: "MongoDB", level: 70 }
     ]

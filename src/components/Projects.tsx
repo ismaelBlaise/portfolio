@@ -4,26 +4,26 @@ import { ExternalLink, Github } from 'lucide-react';
 
 const projects = [
   {
-    title: "E-commerce Platform",
-    description: "Une plateforme e-commerce complète construite avec React et Node.js",
+    title: "Framework java",
+    description: "Une framework java base sur servlet pour faciliter le developpement web",
     image: "https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    github: "#",
-    live: "#"
+    github: "https://github.com/ismaelBlaise/framework-java.git",
+    live: "https://github.com/ismaelBlaise/framework-java.git"
   },
-  {
-    title: "Dashboard Analytics",
-    description: "Dashboard analytique avec visualisation de données en temps réel",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    github: "#",
-    live: "#"
-  },
-  {
-    title: "Social Media App",
-    description: "Application sociale avec chat en temps réel",
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    github: "#",
-    live: "#"
-  }
+  // {
+  //   title: "Dashboard Analytics",
+  //   description: "Dashboard analytique avec visualisation de données en temps réel",
+  //   image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  //   github: "#",
+  //   live: "#"
+  // },
+  // {
+  //   title: "Social Media App",
+  //   description: "Application sociale avec chat en temps réel",
+  //   image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  //   github: "#",
+  //   live: "#"
+  // }
 ];
 
 export default function Projects() {

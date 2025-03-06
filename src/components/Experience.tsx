@@ -4,26 +4,26 @@ import { Briefcase } from 'lucide-react';
 
 const experiences = [
   {
-    position: "Lead Developer",
-    company: "Tech Innovate",
-    period: "2022 - Présent",
-    description: "Direction d'une équipe de 5 développeurs sur des projets d'envergure. Mise en place de l'architecture technique et des bonnes pratiques de développement.",
-    technologies: ["React", "Node.js", "AWS", "Docker"]
+    position: "Chef de projet",
+    company: "It University",
+    period: "2024 - Présent",
+    description: "Direction d'une équipe de 4 développeurs sur des projets d'envergure. Mise en place de l'architecture technique et des bonnes pratiques de développement.",
+    technologies: ["Spring boot", "Postgresql", "Laravel","React native","Vue js" ,"Docker"]
   },
-  {
-    position: "Développeur Full Stack",
-    company: "Digital Solutions",
-    period: "2020 - 2022",
-    description: "Développement d'applications web complexes pour des clients internationaux. Implémentation de solutions scalables et maintenance de systèmes existants.",
-    technologies: ["Vue.js", "Python", "PostgreSQL", "Redis"]
-  },
-  {
-    position: "Développeur Frontend",
-    company: "StartupFlow",
-    period: "2019 - 2020",
-    description: "Création d'interfaces utilisateur modernes et réactives. Collaboration étroite avec les designers pour optimiser l'expérience utilisateur.",
-    technologies: ["React", "TypeScript", "SASS", "Jest"]
-  }
+  // {
+  //   position: "Développeur Full Stack",
+  //   company: "Digital Solutions",
+  //   period: "2020 - 2022",
+  //   description: "Développement d'applications web complexes pour des clients internationaux. Implémentation de solutions scalables et maintenance de systèmes existants.",
+  //   technologies: ["Vue.js", "Python", "PostgreSQL", "Redis"]
+  // },
+  // {
+  //   position: "Développeur Frontend",
+  //   company: "StartupFlow",
+  //   period: "2019 - 2020",
+  //   description: "Création d'interfaces utilisateur modernes et réactives. Collaboration étroite avec les designers pour optimiser l'expérience utilisateur.",
+  //   technologies: ["React", "TypeScript", "SASS", "Jest"]
+  // }
 ];
 
 export default function Experience() {

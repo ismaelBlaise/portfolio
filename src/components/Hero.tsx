@@ -55,21 +55,27 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          <Typography variant="h1" component="h1" align="center" gutterBottom>
-            John Doe
+          <Typography variant="h2" component="h2" align="center" gutterBottom>
+            Andrianaivo Blaise Ismael
           </Typography>
           <Typography variant="h4" component="h2" align="center" color="textSecondary" gutterBottom>
             Développeur Full Stack
           </Typography>
           <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2, mt: 4 }}>
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-              <Github size={24} style={{ cursor: 'pointer' }} />
+              <a href="https://github.com/ismaelBlaise" target="_blank" rel="noopener noreferrer">
+                <Github size={24} style={{ cursor: 'pointer' }} />
+              </a>
             </motion.div>
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-              <Linkedin size={24} style={{ cursor: 'pointer' }} />
+              <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BG3R%2F8r%2BaT%2BqTks3aSCXMiw%3D%3D" target="_blank" rel="noopener noreferrer">
+                <Linkedin size={24} style={{ cursor: 'pointer' }} />
+              </a>
             </motion.div>
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-              <Mail size={24} style={{ cursor: 'pointer' }} />
+              <a href="mailto:ismablaise@gmail.com" target="_blank" rel="noopener noreferrer">
+                <Mail size={24} style={{ cursor: 'pointer' }} />
+              </a>
             </motion.div>
           </Box>
         </motion.div>
@@ -85,12 +91,12 @@ export default function Hero() {
           height: '100%',
         }}
       >
-        <Canvas camera={{ position: [0, 0, 5] }}>
+        {/* <Canvas camera={{ position: [0, 0, 5] }}>
           <ambientLight intensity={0.5} />
           <directionalLight position={[10, 10, 5]} intensity={1} />
           <AnimatedSphere />
           <OrbitControls enableZoom={false} autoRotate />
-        </Canvas>
+        </Canvas> */}
       </Box>
     </Container>
   );

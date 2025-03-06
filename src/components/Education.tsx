@@ -5,22 +5,16 @@ import { GraduationCap } from 'lucide-react';
 
 const educationData = [
   {
-    year: "2020 - 2023",
-    degree: "Master en Développement Web",
-    school: "École Supérieure du Digital",
+    year: "2022 - 2025",
+    degree: "Licence en Développement Web",
+    school: "IT University Madagascar",
     description: "Spécialisation en développement full-stack et architecture cloud"
   },
   {
-    year: "2018 - 2020",
-    degree: "Licence en Informatique",
-    school: "Université de Paris",
-    description: "Formation en algorithmique, structures de données et programmation orientée objet"
-  },
-  {
-    year: "2016 - 2018",
-    degree: "DUT Informatique",
-    school: "IUT de Paris",
-    description: "Bases fondamentales en développement logiciel et systèmes d'information"
+    year: "2021 - 2022",
+    degree: "Baccalauréat serie D",
+    school: "Lycee Saint Pierre Canisius Ambohipo",
+    description: "Diplome de fin d'etude secondaire"
   }
 ];
 
