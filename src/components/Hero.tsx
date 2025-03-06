@@ -4,14 +4,12 @@ import { OrbitControls, Sphere } from '@react-three/drei';
 import { motion } from 'framer-motion';
 import { Typography, Container, Box, Avatar } from '@mui/material';
 import { Github, Linkedin, Mail } from 'lucide-react';
+import profilePic from '../assets/img/profile-removebg-preview.png'; 
 
 function AnimatedSphere() {
   return (
     <Sphere args={[1, 32, 32]}>
-      <meshStandardMaterial
-        color="#4f46e5"
-        wireframe
-      />
+      <meshStandardMaterial color="#4f46e5" wireframe />
     </Sphere>
   );
 }
@@ -33,7 +31,7 @@ export default function Hero() {
           alignItems: 'center',
           justifyContent: 'center',
           flexDirection: 'column',
-          gap: 4
+          gap: 4,
         }}
       >
         <motion.div
@@ -42,15 +40,16 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
         >
           <Avatar
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+            src={profilePic}
             sx={{
               width: 200,
               height: 200,
               border: '4px solid #4f46e5',
-              boxShadow: '0 0 20px rgba(79, 70, 229, 0.3)'
+              boxShadow: '0 0 20px rgba(79, 70, 229, 0.3)',
             }}
           />
         </motion.div>
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -75,6 +74,7 @@ export default function Hero() {
           </Box>
         </motion.div>
       </Box>
+
       <Box
         ref={containerRef}
         sx={{
