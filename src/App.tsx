@@ -1,7 +1,7 @@
 import { ThemeProvider, createTheme } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
 import Navbar from './components/Navbar';
-
+import Hero from './components/Hero';
 
 const theme = createTheme({
   palette: {
@@ -30,6 +30,11 @@ function App() {
     <ThemeProvider theme={theme}>
     <CssBaseline />
     <Navbar />
+    <main>
+        <section id="hero">
+          <Hero />
+        </section>
+      </main>
     </ThemeProvider>
   );
 }
