@@ -2,9 +2,9 @@ import { useRef } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Sphere } from '@react-three/drei';
 import { motion } from 'framer-motion';
-import { Typography, Container, Box, Avatar } from '@mui/material';
-import { Github, Linkedin, Mail } from 'lucide-react';
-import profilePic from '../assets/img/profile-removebg-preview.png'; 
+import { Typography, Container, Box, Avatar, Button } from '@mui/material';
+import { Github, Linkedin, Mail, Download } from 'lucide-react';
+import profilePic from '../assets/img/profile-removebg-preview.png';
 
 function AnimatedSphere() {
   return (
@@ -44,8 +44,8 @@ export default function Hero() {
             sx={{
               width: 200,
               height: 200,
-              border: '4px solid #4f46e5',
-              boxShadow: '0 0 20px rgba(79, 70, 229, 0.3)',
+              border: '4px solid ',  // Couleur modifiée ici
+              boxShadow: '0 0 20px rgba(34, 139, 34, 0.3)', // Ombre verte
             }}
           />
         </motion.div>
@@ -78,6 +78,28 @@ export default function Hero() {
               </a>
             </motion.div>
           </Box>
+
+          {/* Ajouter le bouton de téléchargement du CV */}
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            style={{ marginTop: '20px', display: 'flex', justifyContent: 'center' }} // Ajout de flexbox pour centrer
+          > 
+           <Button
+              href="/path/to/your/cv.pdf" // Remplace par le chemin réel du CV
+              download
+              variant="contained"
+          
+              sx={{
+
+                padding: '10px 20px',
+                fontWeight: 'bold',
+              }}
+              startIcon={<Download />}
+            >
+              Télécharger CV
+            </Button>
+          </motion.div>
         </motion.div>
       </Box>
 

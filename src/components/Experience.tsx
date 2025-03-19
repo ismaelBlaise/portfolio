@@ -8,7 +8,7 @@ const experiences = [
     company: "It University",
     period: "2024 - Présent",
     description: "Direction d'une équipe de 4 développeurs sur des projets d'envergure. Mise en place de l'architecture technique et des bonnes pratiques de développement.",
-    technologies: ["Spring boot", "Postgresql", "Laravel","React native","Vue js" ,"Docker"]
+    technologies: ["Spring boot", "Postgresql", "Laravel", "React native", "Vue js", "Docker"]
   },
   // {
   //   position: "Développeur Full Stack",
@@ -61,7 +61,7 @@ export default function Experience() {
                   <Typography variant="body1" paragraph>
                     {exp.description}
                   </Typography>
-                  <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap' }}>
+                  <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', color: '#228b22', p: 1, borderRadius: 1 }}>
                     {exp.technologies.map((tech, techIndex) => (
                       <Chip
                         key={techIndex}

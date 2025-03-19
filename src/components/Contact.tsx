@@ -11,7 +11,7 @@ export default function Contact() {
   });
   const [openSnackbar, setOpenSnackbar] = useState(false);
 
-  // Fonction pour gérer la mise à jour des données du formulaire
+ 
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData({
@@ -20,35 +20,20 @@ export default function Contact() {
     });
   };
 
-  // Fonction pour gérer la soumission du formulaire
-  const handleSubmit = async (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
-    // Vous pouvez envoyer le formulaire ici via une API ou un service d'email
 
-    try {
-      // Par exemple, une requête à votre API (remplacez avec la vraie URL et méthode)
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+    const mailtoLink = `mailto:ismablaise@gmail.com?subject=Message de ${formData.name}&body=Nom: ${formData.name}%0AEmail: ${formData.email}%0AMessage:%0A${encodeURIComponent(formData.message)}`;
 
-      if (response.ok) {
-        setOpenSnackbar(true);
-        setFormData({
-          name: '',
-          email: '',
-          message: ''
-        });
-      } else {
-        // Gérer les erreurs de soumission ici
-        console.error('Erreur lors de l\'envoi du message');
-      }
-    } catch (error) {
-      console.error('Erreur de connexion à l\'API:', error);
-    }
+    window.location.href = mailtoLink;
+
+    setOpenSnackbar(true);
+
+    setFormData({
+      name: '',
+      email: '',
+      message: ''
+    });
   };
 
   return (
@@ -107,6 +92,7 @@ export default function Contact() {
             endIcon={<Send />}
             sx={{ alignSelf: 'flex-start' }}
             type="submit"
+            
           >
             Envoyer
           </Button>
